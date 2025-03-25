@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 public class Week2 {
-	public static void main(String[] args) throws InterruptedException{
+	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 		WebDriver driver=new ChromeDriver();
         driver.get("https://www.mercurytravels.co.in/");
