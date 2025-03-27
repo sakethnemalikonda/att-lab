@@ -21,3 +21,27 @@ public class week5 {
 		submit.click();
 	}
 }
+
+Another similar program:-
+
+package cseb5x0;
+import javax.swing.plaf.basic.BasicInternalFrameTitlePane.MaximizeAction;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+public class Week5 {
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://results.cmrithyderabad.edu.in/");
+		driver.get("https://results.cmrithyderabad.edu.in/result/9c567e59f3e34f3e8ea751cc84e22cca");
+		WebElement searchBar=driver.findElement(By.className("hallticket"));
+		searchBar.sendKeys("23R01A05V5");
+		Thread.sleep(2000);
+		searchBar.sendKeys(Keys.ENTER);
+		Thread.sleep(2000);		
+	}
+}
