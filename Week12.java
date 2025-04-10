@@ -22,7 +22,7 @@ public class week12 {
 		Thread.sleep(15000);
 		WebElement pdfFromWordHyperLink = driver.findElement(By.xpath("(//h3[normalize-space()='Convert Word to PDF. Documents DOC to PDF'])"));
 		pdfFromWordHyperLink.click();
-		Thread.sleep(10000);
+		Thread.sleep(2000);
 		WebElement chooseFileBtn = driver.findElement(By.xpath("(//span[normalize-space()='Select WORD files'])"));
 		chooseFileBtn.click();
 		Thread.sleep(500);	
